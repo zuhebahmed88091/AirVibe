@@ -6,6 +6,9 @@ function App() {
 
     <Routes>
       <Route path="/" element={<Weather />} />
+      <Route
+        path="/city/:id"
+      />
     </Routes>
 
   );
