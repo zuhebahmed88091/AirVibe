@@ -8,7 +8,7 @@ const Nav = () => (
       <img className="logo" src={logo} alt="logo" />
       <h1>AirVibe</h1>
     </nav>
-    <header>
+    <header className="map-header">
       <div className="map">
         <img src={continents} alt="Asia Map" />
       </div>

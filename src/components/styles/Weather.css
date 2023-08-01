@@ -15,3 +15,20 @@
   margin-top: 0.6rem;
   margin-right: 3rem;
 }
+
+.map-header {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.map img {
+    width: 10rem;
+}
+
+.map-header h1 {
+    color: #fff;
+    margin-top: 0.6rem;
+    margin-left: 1rem;
+}
