@@ -2,21 +2,22 @@ import { useSelector } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
 import AqiDetails from './AqiDetails';
 import AqiDetailed from './AqiDetailed';
+import './styles/WeatherDetails.css';
 
 const WeatherDetails = () => {
   const cityData = useSelector((state) => state.weather.dataOfCities);
   const { id } = useParams();
+  const selectedCityData = cityData.find((city) => city.id === id);
+  const cityName = selectedCityData ? selectedCityData.city : '';
   const Aqi = AqiDetails(id, cityData);
   return (
     <article className="air-details">
       <nav className="air-details-nav">
         <Link to="/">
-          <button className="back" type="button">Back</button>
+          <h1 className="back">&#60;</h1>
         </Link>
+        <h2>{cityName}</h2>
       </nav>
-      <header className="city-name">
-        <h2>{cityData[0].city}</h2>
-      </header>
       <header className="intro">
         <h2>Air components concentrations</h2>
       </header>

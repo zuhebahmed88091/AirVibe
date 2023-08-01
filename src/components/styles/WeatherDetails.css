@@ -1,0 +1,51 @@
+.air-details-nav {
+  align-items: center;
+  background-color: #7a1b6e;
+  display: flex;
+  padding: 5px;
+}
+
+.air-details-nav a {
+  text-decoration: none;
+}
+
+.air-details-nav h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.back {
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.intro h2 {
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.conc-header {
+  color: #fff;
+  background-color: #c9184a;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.data-component-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  height: 4rem;
+  text-align: center;
+}
+
+.data-component-wrap:nth-child(2n) {
+  background-color: rgba(241, 120, 220, 0.9);
+}

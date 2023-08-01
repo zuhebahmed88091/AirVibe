@@ -14,17 +14,17 @@ const Cities = ({ city, aqi }) => {
   } else if (aqi === 5) {
     weatherStatus = 'Very Poor';
   }
-
+  const statusClassName = weatherStatus.toLowerCase().replace(' ', '-');
   return (
     <div className="cities-weather">
       <h2>{city}</h2>
       <div className="air-quality">
-        <span>Quality of air:</span>
-        <span>{weatherStatus}</span>
+        <span className="quality">Quality of air:</span>
+        <span className={statusClassName}>{weatherStatus}</span>
       </div>
       <div className="quality-index">
-        <span>Quality index:</span>
-        <span>{aqi}</span>
+        <span className="quality-index-header">Quality index:</span>
+        <span className={statusClassName}>{aqi}</span>
       </div>
     </div>
   );
