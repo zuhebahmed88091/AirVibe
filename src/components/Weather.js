@@ -9,7 +9,6 @@ const Weather = () => {
   const cityData = useSelector((state) => state.weather.dataOfCities);
   const isDataFetched = useSelector((state) => state.weather.isDataFetched);
   const dispatch = useDispatch();
-  console.log(cityData);
 
   useEffect(() => {
     if (isDataFetched === false) {
