@@ -5,12 +5,12 @@ const AqiDetails = (cityId, cityData) => {
     const newComponents = [
       { dataname: 'CO', data: '' },
       { dataname: 'NO', data: '' },
-      { dataname: 'NO₂', data: '' },
-      { dataname: 'O₃', data: '' },
-      { dataname: 'SO₂', data: '' },
-      { dataname: 'PM₂.₅', data: '' },
-      { dataname: 'PM₁₀', data: '' },
-      { dataname: 'NH₃', data: '' },
+      { dataname: 'NO<sub>2</sub>', data: '' },
+      { dataname: 'O<sub>3</sub>', data: '' },
+      { dataname: 'SO<sub>2</sub>', data: '' },
+      { dataname: 'PM<sub>2.5</sub>', data: '' },
+      { dataname: 'PM<sub>10</sub>', data: '' },
+      { dataname: 'NH<sub>3</sub>', data: '' },
     ];
     const updatedComponents = newComponents.map((component, index) => ({
       ...component,
