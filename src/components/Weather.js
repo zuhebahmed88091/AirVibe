@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCitiesWeather } from '../redux/weatherSlice';
 import Nav from './Nav';
 import Cities from './Cities';
+import './styles/Weather.css';
 
 const Weather = () => {
   const cityData = useSelector((state) => state.weather.dataOfCities);

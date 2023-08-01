@@ -1,0 +1,17 @@
+.navbar {
+  background-color: #7a1b6e;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.logo {
+  width: 3rem;
+  margin-left: 2rem;
+}
+
+.navbar h1 {
+  color: #fff;
+  margin-top: 0.6rem;
+  margin-right: 3rem;
+}
