@@ -1,0 +1,55 @@
+.flex {
+  display: flex;
+}
+
+.air-details-nav {
+  align-items: center;
+  background-color: #df4580;
+  padding: 5px;
+}
+
+.air-details-nav a {
+  text-decoration: none;
+}
+
+.air-details-nav h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.back {
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.intro h2 {
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.conc-header {
+  color: #fff;
+  background-color: #df4580;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.data-component-wrap {
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  height: 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+.data-component-wrap:nth-child(2n) {
+  background-color: #df4580;
+  color: #fff;
+}

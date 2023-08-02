@@ -1,0 +1,160 @@
+.flex {
+  display: flex;
+}
+
+.navbar {
+  background-color: #df4580;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.logo {
+  width: 3rem;
+  margin-left: 2rem;
+}
+
+.navbar h1 {
+  color: #fff;
+  margin-top: 0.6rem;
+  margin-right: 3rem;
+}
+
+.filter {
+  margin-top: 0.3rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(252, 81, 147, 255);
+  border-radius: 4px;
+  font-size: 16px;
+  color: rgba(252, 81, 147, 255);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="text"]::placeholder {
+  color: rgba(252, 81, 147, 0.8);
+}
+
+.map-header {
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 2px solid #df4580;
+}
+
+.map img {
+  width: 10rem;
+}
+
+.map-header h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.cities {
+  flex-wrap: wrap;
+}
+
+.arrow-img {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 0.7rem;
+  padding-right: 0.3rem;
+  padding-top: 0.2rem;
+}
+
+.cities-weather {
+  flex-direction: column;
+}
+
+.cities a:nth-of-type(8n - 7),
+.cities a:nth-child(8n) {
+  align-items: center;
+  background-color: rgba(252, 81, 147, 255);
+  color: #fff;
+  flex-direction: column;
+  height: 9.375rem;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+}
+
+.cities a:nth-of-type(8n - 6),
+.cities a:nth-of-type(8n - 5) {
+  background-color: #df4580;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  height: 9.375rem;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+}
+
+.cities a:nth-child(8n - 4),
+.cities a:nth-child(8n - 3) {
+  background-color: rgba(252, 81, 147, 255);
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  height: 9.375rem;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+}
+
+.cities a:nth-child(8n - 2),
+.cities a:nth-of-type(8n - 1) {
+  background-color: #df4580;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  height: 9.375rem;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+}
+
+.good {
+  color: #0f0;
+  font-weight: bold;
+}
+
+.fair {
+  color: #5affa5;
+  font-weight: bold;
+}
+
+.moderate {
+  color: #ff0;
+  font-weight: bold;
+}
+
+.poor {
+  color: #fa0;
+  font-weight: bold;
+}
+
+.very-poor {
+  color: #f00;
+  font-weight: bold;
+}
+
+.quality {
+  padding-right: 0.4rem;
+}
+
+.quality-index-header {
+  padding-right: 0.4rem;
+}
+
+.cities-weather h2 {
+  padding-bottom: 0.5rem;
+}
+
+.air-quality {
+  margin-bottom: 0.5rem;
+}
