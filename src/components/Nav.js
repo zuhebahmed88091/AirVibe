@@ -5,19 +5,19 @@ import continents from './Assets/continents.png';
 import Filter from './Filter';
 
 const Nav = ({ handleFilterChange }) => (
-  <>
+  <header>
     <nav className="navbar">
       <img className="logo" src={logo} alt="logo" />
       <h1>AirVibe</h1>
       <Filter handleFilterChange={handleFilterChange} />
     </nav>
-    <header className="map-header">
+    <div className="map-header">
       <div className="map">
         <img src={continents} alt="Asia Map" />
       </div>
-      <h1>Air Quality in Global Cities</h1>
-    </header>
-  </>
+      <h2>Air Quality in Global Cities</h2>
+    </div>
+  </header>
 );
 
 Nav.propTypes = {
