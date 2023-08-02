@@ -1,4 +1,4 @@
-const AqiDetails = (cityId, cityData) => {
+const aqiDetails = (cityId, cityData) => {
   const cityArr = cityData.filter((city) => city.id === cityId);
   if (cityArr.length > 0) {
     const components = Object.values(cityArr[0].data.components);
@@ -21,4 +21,4 @@ const AqiDetails = (cityId, cityData) => {
   return [];
 };
 
-export default AqiDetails;
+export default aqiDetails;

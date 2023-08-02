@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
-import AqiDetails from './AqiDetails';
+import aqiDetails from './AqiDetails';
 import AqiDetailed from './AqiDetailed';
 import './styles/WeatherDetails.css';
 
@@ -9,7 +9,7 @@ const WeatherDetails = () => {
   const { id } = useParams();
   const selectedCityData = cityData.find((city) => city.id === id);
   const cityName = selectedCityData ? selectedCityData.city : '';
-  const aqi = AqiDetails(id, cityData);
+  const aqi = aqiDetails(id, cityData);
   return (
     <article className="air-details">
       <nav className="air-details-nav">
