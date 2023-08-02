@@ -16,7 +16,7 @@ const Cities = ({ city, aqi }) => {
   }
   const statusClassName = weatherStatus.toLowerCase().replace(' ', '-');
   return (
-    <div className="cities-weather">
+    <div className="cities-weather flex">
       <h2>{city}</h2>
       <div className="air-quality">
         <span className="quality">Quality of air:</span>

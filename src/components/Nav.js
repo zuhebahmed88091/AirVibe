@@ -1,21 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import logo from './Assets/weather-app.png';
 import continents from './Assets/continents.png';
+import Filter from './Filter';
 
-const Nav = () => (
-  <>
-    <nav className="navbar">
+const Nav = ({ handleFilterChange }) => (
+  <header>
+    <nav className="navbar flex">
       <img className="logo" src={logo} alt="logo" />
       <h1>AirVibe</h1>
+      <Filter handleFilterChange={handleFilterChange} />
     </nav>
-    <header className="map-header">
+    <div className="map-header flex">
       <div className="map">
         <img src={continents} alt="Asia Map" />
       </div>
-      <h1>Air Quality in Global Cities</h1>
-    </header>
-  </>
-
+      <h2>Air Quality in Global Cities</h2>
+    </div>
+  </header>
 );
+
+Nav.propTypes = {
+  handleFilterChange: PropTypes.func.isRequired,
+};
 
 export default Nav;

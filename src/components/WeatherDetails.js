@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
-import AqiDetails from './AqiDetails';
+import aqiDetails from './AqiDetails';
 import AqiDetailed from './AqiDetailed';
 import './styles/WeatherDetails.css';
 
@@ -9,10 +9,10 @@ const WeatherDetails = () => {
   const { id } = useParams();
   const selectedCityData = cityData.find((city) => city.id === id);
   const cityName = selectedCityData ? selectedCityData.city : '';
-  const Aqi = AqiDetails(id, cityData);
+  const aqi = aqiDetails(id, cityData);
   return (
     <article className="air-details">
-      <nav className="air-details-nav">
+      <nav className="air-details-nav flex">
         <Link to="/">
           <h1 className="back">&#60;</h1>
         </Link>
@@ -23,7 +23,7 @@ const WeatherDetails = () => {
       </header>
       <section className="conc-header">Concentration in μg/m3</section>
       <section className="conc-data">
-        {Aqi.map((component) => (
+        {aqi.map((component) => (
           <AqiDetailed
             key={component.dataname}
             dataname={component.dataname}

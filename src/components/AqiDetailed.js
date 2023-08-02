@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const AqiDetailed = ({ dataname, data }) => {
   const parsedName = React.createElement('div', { dangerouslySetInnerHTML: { __html: dataname } });
   return (
-    <div className="data-component-wrap">
+    <div className="data-component-wrap flex">
       <div className="data-component-name">
         {parsedName}
       </div>
