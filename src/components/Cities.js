@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// import arrow from './Assets/arrowRight.svg';
 
 const Cities = ({ city, aqi }) => {
   let weatherStatus = '';
