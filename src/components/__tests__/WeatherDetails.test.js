@@ -13,6 +13,6 @@ test('renders the WeatherDetails component', () => {
   render(
     <Router>
       <WeatherDetails />
-    </Router>
+    </Router>,
   );
 });

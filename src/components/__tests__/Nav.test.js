@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import store from '../../redux/store';
 import Nav from '../Nav';
 
-const customRender  = (component) => render(
+const customRender = (component) => render(
   <Provider store={store}>
     {component}
   </Provider>,
@@ -12,7 +12,7 @@ const customRender  = (component) => render(
 
 describe('Nav', () => {
   it('render Nav Components', () => {
-    customRender (<Nav />);
+    customRender(<Nav />);
     expect(Nav).toMatchSnapshot();
   });
 });

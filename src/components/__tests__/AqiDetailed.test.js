@@ -3,12 +3,10 @@ import { render } from '@testing-library/react';
 import AqiDetailed from '../AqiDetailed';
 
 describe('AqiDetailed', () => {
-  it('render AqiDetailed Components', () => {
-    const dummyData = {
-      dataname: 'CO',
-      data: '10',
-    };
-    render(<AqiDetailed {...dummyData} />);
+  it('should render AqiDetailed component', () => {
+    const dataname = 'CO';
+    const data = '1';
+    render(<AqiDetailed dataname={dataname} data={data} />);
     expect(AqiDetailed).toMatchSnapshot();
   });
 });

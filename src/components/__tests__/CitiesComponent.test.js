@@ -3,12 +3,10 @@ import { render } from '@testing-library/react';
 import Cities from '../Cities';
 
 describe('Cities', () => {
-  it('render Cities Components', () => {
-    const dummyData = {
-      city: 'London',
-      aqi: 1,
-    };
-    render(<Cities {...dummyData} />);
+  it('should render Cities component', () => {
+    const city = 'London';
+    const aqi = 1;
+    render(<Cities city={city} aqi={aqi} />);
     expect(Cities).toMatchSnapshot();
   });
 });
