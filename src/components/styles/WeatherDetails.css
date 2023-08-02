@@ -1,7 +1,10 @@
+.flex {
+  display: flex;
+}
+
 .air-details-nav {
   align-items: center;
   background-color: #df4580;
-  display: flex;
   padding: 5px;
 }
 
@@ -39,7 +42,6 @@
 
 .data-component-wrap {
   align-items: center;
-  display: flex;
   justify-content: space-around;
   font-size: 1.5rem;
   height: 4rem;

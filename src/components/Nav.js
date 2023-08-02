@@ -6,12 +6,12 @@ import Filter from './Filter';
 
 const Nav = ({ handleFilterChange }) => (
   <header>
-    <nav className="navbar">
+    <nav className="navbar flex">
       <img className="logo" src={logo} alt="logo" />
       <h1>AirVibe</h1>
       <Filter handleFilterChange={handleFilterChange} />
     </nav>
-    <div className="map-header">
+    <div className="map-header flex">
       <div className="map">
         <img src={continents} alt="Asia Map" />
       </div>

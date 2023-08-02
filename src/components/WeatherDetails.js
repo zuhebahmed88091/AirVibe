@@ -12,7 +12,7 @@ const WeatherDetails = () => {
   const aqi = aqiDetails(id, cityData);
   return (
     <article className="air-details">
-      <nav className="air-details-nav">
+      <nav className="air-details-nav flex">
         <Link to="/">
           <h1 className="back">&#60;</h1>
         </Link>

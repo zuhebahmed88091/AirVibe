@@ -32,9 +32,9 @@ const Weather = () => {
   return (
     <div id="main-wrap">
       <Nav handleFilterChange={handleFilterChange} />
-      <section className="cities">
+      <section className="cities flex">
         {filteredCities.map((city) => (
-          <Link to={`city/${city.id}`} key={city.id}>
+          <Link className="flex" to={`city/${city.id}`} key={city.id}>
             <div className="arrow-img"><img className="arrow" src={arrow} alt="arrow" /></div>
             <Cities
               city={city.city}

@@ -1,6 +1,9 @@
+.flex {
+  display: flex;
+}
+
 .navbar {
   background-color: #df4580;
-  display: flex;
   justify-content: space-between;
   padding: 0.5rem;
 }
@@ -36,7 +39,6 @@ input[type="text"]::placeholder {
 
 .map-header {
   align-items: center;
-  display: flex;
   gap: 1rem;
   padding: 1rem;
   border-bottom: 2px solid #df4580;
@@ -53,7 +55,6 @@ input[type="text"]::placeholder {
 }
 
 .cities {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -66,7 +67,6 @@ input[type="text"]::placeholder {
 }
 
 .cities-weather {
-  display: flex;
   flex-direction: column;
 }
 
@@ -75,7 +75,6 @@ input[type="text"]::placeholder {
   align-items: center;
   background-color: rgba(252, 81, 147, 255);
   color: #fff;
-  display: flex;
   flex-direction: column;
   height: 9.375rem;
   text-align: center;
@@ -88,7 +87,6 @@ input[type="text"]::placeholder {
   background-color: #df4580;
   align-items: center;
   color: #fff;
-  display: flex;
   flex-direction: column;
   height: 9.375rem;
   text-align: center;
@@ -101,7 +99,6 @@ input[type="text"]::placeholder {
   background-color: rgba(252, 81, 147, 255);
   align-items: center;
   color: #fff;
-  display: flex;
   flex-direction: column;
   height: 9.375rem;
   text-align: center;
@@ -114,7 +111,6 @@ input[type="text"]::placeholder {
   background-color: #df4580;
   align-items: center;
   color: #fff;
-  display: flex;
   flex-direction: column;
   height: 9.375rem;
   text-align: center;
