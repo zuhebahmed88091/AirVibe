@@ -5,6 +5,7 @@ import { getCitiesWeather } from '../redux/weatherSlice';
 import Nav from './Nav';
 import Cities from './Cities';
 import './styles/Weather.css';
+import arrow from './Assets/arrowRight.svg';
 
 const Weather = () => {
   const cityData = useSelector((state) => state.weather.dataOfCities);
@@ -23,6 +24,7 @@ const Weather = () => {
       <section className="cities">
         {cityData.map((city) => (
           <Link to={`city/${city.id}`} key={city.id}>
+            <div className="arrow-img"><img className="arrow" src={arrow} alt="arrow" /></div>
             <Cities
               city={city.city}
               aqi={city.data.main.aqi}

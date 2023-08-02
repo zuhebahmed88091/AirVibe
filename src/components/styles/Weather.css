@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #7a1b6e;
+  background-color: #df4580;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
@@ -21,6 +21,7 @@
   display: flex;
   gap: 1rem;
   padding: 1rem;
+  border-bottom: 2px solid #df4580;
 }
 
 .map img {
@@ -29,8 +30,8 @@
 
 .map-header h1 {
   color: #fff;
-  margin-top: 0.6rem;
-  margin-left: 1rem;
+  font-size: 1.5rem;
+  margin-left: 2rem;
 }
 
 .cities {
@@ -38,14 +39,27 @@
   flex-wrap: wrap;
 }
 
+.arrow-img {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 0.7rem;
+  padding-right: 0.3rem;
+  padding-top: 0.2rem;
+}
+
+.cities-weather {
+  display: flex;
+  flex-direction: column;
+}
+
 .cities a:nth-of-type(8n - 7),
 .cities a:nth-child(8n) {
   align-items: center;
-  background-color: #081c15;
+  background-color: rgba(252, 81, 147, 255);
   color: #fff;
   display: flex;
+  flex-direction: column;
   height: 9.375rem;
-  justify-content: center;
   text-align: center;
   text-decoration: none;
   width: 50%;
@@ -53,12 +67,12 @@
 
 .cities a:nth-of-type(8n - 6),
 .cities a:nth-of-type(8n - 5) {
-  background-color: #2c4737;
+  background-color: #df4580;
   align-items: center;
   color: #fff;
   display: flex;
+  flex-direction: column;
   height: 9.375rem;
-  justify-content: center;
   text-align: center;
   text-decoration: none;
   width: 50%;
@@ -66,12 +80,12 @@
 
 .cities a:nth-child(8n - 4),
 .cities a:nth-child(8n - 3) {
-  background-color: #081c15;
+  background-color: rgba(252, 81, 147, 255);
   align-items: center;
   color: #fff;
   display: flex;
+  flex-direction: column;
   height: 9.375rem;
-  justify-content: center;
   text-align: center;
   text-decoration: none;
   width: 50%;
@@ -79,12 +93,12 @@
 
 .cities a:nth-child(8n - 2),
 .cities a:nth-of-type(8n - 1) {
-  background-color: #2c4737;
+  background-color: #df4580;
   align-items: center;
   color: #fff;
   display: flex;
+  flex-direction: column;
   height: 9.375rem;
-  justify-content: center;
   text-align: center;
   text-decoration: none;
   width: 50%;
@@ -92,22 +106,27 @@
 
 .good {
   color: #0f0;
+  font-weight: bold;
 }
 
 .fair {
   color: #5affa5;
+  font-weight: bold;
 }
 
 .moderate {
   color: #ff0;
+  font-weight: bold;
 }
 
 .poor {
   color: #fa0;
+  font-weight: bold;
 }
 
 .very-poor {
   color: #f00;
+  font-weight: bold;
 }
 
 .quality {

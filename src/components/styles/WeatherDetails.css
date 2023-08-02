@@ -1,6 +1,6 @@
 .air-details-nav {
   align-items: center;
-  background-color: #7a1b6e;
+  background-color: #df4580;
   display: flex;
   padding: 5px;
 }
@@ -32,7 +32,7 @@
 
 .conc-header {
   color: #fff;
-  background-color: #c9184a;
+  background-color: #df4580;
   padding: 0.5rem;
   text-align: center;
 }
@@ -44,8 +44,10 @@
   font-size: 1.5rem;
   height: 4rem;
   text-align: center;
+  color: #fff;
 }
 
 .data-component-wrap:nth-child(2n) {
-  background-color: rgba(241, 120, 220, 0.9);
+  background-color: #df4580;
+  color: #fff;
 }
