@@ -3,7 +3,7 @@
 
 <div align="center">
  <b> <i> <u> PREVIEW </u> </i></b> </br> </br>
- <img src='./mobile.gif'>
+ <img src='./airvibe.gif'>
 </div>
 
 <div align="center">
