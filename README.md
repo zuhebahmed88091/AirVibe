@@ -37,7 +37,7 @@
 
 # 📖 AirVibe <a name="about-project"></a>
 
-**ECOCLIMA** Unleash the Power of Change with Our Eco-Social App. Stay Empowered and United to Safeguard Our Planet. Get Live Air Quality Updates and Embrace a Caring Community. Let's Embrace Positivity Together for a Greener Tomorrow. Join the Movement for a Sustainable Future!
+**AirVibe** Unleash the Power of Change with Our Eco-Social App. Stay Empowered and United to Safeguard Our Planet. Get Live Air Quality Updates and Embrace a Caring Community. Let's Embrace Positivity Together for a Greener Tomorrow. Join the Movement for a Sustainable Future!
 
 ## 🛠 Built With <a name="built-with"></a>
 
